@@ -1,0 +1,89 @@
+﻿<%@ Master Language="VB" CodeFile="FrontEnd.master.vb" Inherits="MasterPages_FrontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Textbook Gemach</title>
+    <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <header>
+            
+       <img src="./MasterPages/textbook gemach logo.PNG" />
+          
+                <!--<div class="container-fluid">
+                           <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Sell Book</a></li>
+                </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Some Content.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+                
+                </div>
+             </div>-->
+            <!--this uses tabs, isn't quite like a menu, and doesn't redirect you to another page
+            <div class="container-fluid">
+                           <ul class="nav nav-tabs">
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="Default.aspx">Home</a></li>
+                    <li class="nav-item"><a data-toggle="tab" class="nav-link" href="ContactUs.aspx">Sell Book</a></li>
+                </ul>
+            
+             </div>-->
+            
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Default.aspx">Home</a></li>
+                    <li><a href="ContactUs.aspx">Sell Book</a></li>
+                
+                    </ul>--.
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal"      DataSourceID="SiteMapDataSource1" StaticEnableDefaultPopOutImage="False"> </asp:Menu>
+ 
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+ 
+                </div>
+            </nav>
+         
+
+
+
+
+            
+    </header>
+    <section id="MainContent">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </section>
+         <footer>
+             <div class="container">
+                 <ol class="breadcrumb">
+                     <li><a href="Default.aspx">Home</a></li>
+                     <li><a href="#menu1">Sell book</a></li>
+                 </ol>
+                 <!--<asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>-->
+             </div>
+        © Bakst 2017
+        <a href="./ContactUs.aspx">Contact Us</a>
+    </footer>
+    </form>
+   
+</body>
+</html>

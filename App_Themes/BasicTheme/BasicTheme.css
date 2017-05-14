@@ -1,0 +1,99 @@
+﻿*
+{
+    font-family: 'Brush Script MT';
+    font-size: 24px;
+}
+
+body{
+    /* 
+    Clears white space around the body.
+  */
+    margin: 0;
+    background-color:yellowgreen;
+    text-align: center;
+
+}
+
+a{
+    /*
+    Clears the underline on normal links.
+  */
+  color: yellowgreen;
+  text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+header img{
+    width: 300px;
+    height: 215px;
+    display: block;
+    
+}
+
+#MainContent{
+ /*
+    Defines the main content area. The text color is white (on the gray background set on the body).
+    The #MainContent element has a minimum height of 370 pixels, but can grow if necessary.
+    The font-size is 80% of its parent element, which in this case comes down to 80% of the font
+    the user has specified as the default font in the browser.
+  */
+  color: white;
+  font-size: 0.8em;
+  width: 600px;
+  min-height: 370px;
+  padding: 10px;
+  float: left;
+}
+
+footer
+{
+  /*
+    The footer is positioned below all other content.
+    At the top, it gets a border with a dashed style, while all other sides have no border.
+  */
+  text-align: center;
+  border-top: 2px dashed gray;
+  height: 37px;
+  clear: both;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.MyButton
+{
+    background-color: deepskyblue ;
+    color: white;
+    border: 2px, double, black;
+}
+.MyLabel{
+  
+    padding: 5px;
+    margin: 10px;
+   
+}
+
+.MyTextbox{
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+#SearchBooksTextBox
+{
+    margin: 0 auto;
+}
+
+#SearchBooksButton{
+   float: right;
+}
+
